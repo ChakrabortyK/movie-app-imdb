@@ -1,0 +1,26 @@
+@import "../../common/colors.scss";
+
+.movies-error,
+.movie-container {
+  //   border: 2px dotted red;
+  color: $font-secondary;
+  margin: auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  //   width: max-content;
+}
+
+.movie-list {
+  margin: auto;
+  h2 {
+    color: $font-primary;
+    // border: 2px dotted red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

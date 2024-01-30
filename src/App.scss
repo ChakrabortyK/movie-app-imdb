@@ -1,0 +1,35 @@
+@import "../src/common/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.html {
+  width: 98vw;
+}
+.App {
+  // height: 100vh;
+  position: relative;
+  // width: 100vw;
+  background: rgba(0, 0, 0, 0.598);
+}
+
+.content-container {
+  padding-bottom: 0.2rem;
+  padding: 10px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url("./images/netflix.jpg") no-repeat;
+  background-size: cover;
+}
+.container {
+  margin: 0px auto;
+}

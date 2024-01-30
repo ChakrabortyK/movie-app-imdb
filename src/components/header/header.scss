@@ -1,0 +1,23 @@
+@import "../../common/colors.scss";
+
+.header {
+  color: $primary-color;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-heading,
+.Link {
+  font-size: large;
+  text-decoration: none;
+  color: $font-primary;
+}
+
+.user-image img {
+  margin: 10px 10px;
+  height: 55px;
+  border-radius: 100%;
+}
