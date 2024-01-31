@@ -4,11 +4,11 @@ import movieApi from "../../common/APIs/movieApi";
 
 export const fetchMovies = createAsyncThunk(
   "movieSlice/fetchMovies",
-  async () => {
-    const movieSearchText = "harry";
+  async (term) => {
     const response = await movieApi
-      .get(`?apiKey=${API_KEY}&s=${movieSearchText}`)
+      .get(`?apiKey=${API_KEY}&s=${term}`)
       .catch((e) => console.log(e));
+    // console.log("hit");
     return response.data;
   }
 );
@@ -18,25 +18,20 @@ const movieSlice = createSlice({
   initialState: {
     movies: {},
   },
-  reducers: {
-    addMovies(state, action) {
-      state.movies = action.payload;
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchMovies.pending, () => {
-      console.log("Pending...");
+      // console.log("Pending...");
     });
     builder.addCase(fetchMovies.fulfilled, (state, action) => {
       state.movies = action.payload;
+      // console.log("Added movies");
     });
     builder.addCase(fetchMovies.rejected, () => {
-      console.log("Rejected...");
+      // console.log("Rejected...");
     });
   },
 });
 
-// export const getAllMovies = (state) => state.movieReducer.movies;
-// console.log(getAllMovies);
 export default movieSlice.reducer;
-export const { addMovies } = movieSlice.actions;
+// export const { addMovies } = movieSlice.actions;

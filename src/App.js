@@ -26,8 +26,8 @@ function App() {
           {/* <Route path='/movie/:imdbID' element={<MovieDetails />} /> */}
           <Route path='*' element={<Page404 />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

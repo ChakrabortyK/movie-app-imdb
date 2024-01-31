@@ -14,10 +14,42 @@
   font-size: large;
   text-decoration: none;
   color: $font-primary;
+  font-weight: 300;
 }
 
 .user-image img {
   margin: 10px 10px;
   height: 55px;
   border-radius: 100%;
+}
+
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  form {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+
+    button {
+      border-radius: 50px;
+      padding: 0px 8px;
+      font-size: 20px;
+      cursor: pointer;
+      height: 38px;
+      color: $secondary-color;
+      background-color: $primary-color;
+    }
+    input {
+      color: $font-primary;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50px;
+      font-size: 18px;
+      width: 100%;
+      padding: 5px 5px 5px 10px;
+      height: 38px;
+      outline: none;
+    }
+  }
 }

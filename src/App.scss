@@ -1,25 +1,22 @@
 @import "../src/common/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.html {
-  width: 98vw;
-}
 .App {
-  // height: 100vh;
-  position: relative;
-  // width: 100vw;
   background: rgba(0, 0, 0, 0.598);
 }
 
 .content-container {
-  padding-bottom: 0.2rem;
   padding: 10px 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
