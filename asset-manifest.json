@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.402f673a.css",
-    "main.js": "/static/js/main.703dd322.js",
-    "static/media/netflix.jpg": "/static/media/netflix.95c0df00113974b5816d.jpg",
-    "index.html": "/index.html",
-    "main.402f673a.css.map": "/static/css/main.402f673a.css.map",
-    "main.703dd322.js.map": "/static/js/main.703dd322.js.map"
+    "main.css": "/movie-app-imdb/static/css/main.b91b6a17.css",
+    "main.js": "/movie-app-imdb/static/js/main.703dd322.js",
+    "static/media/netflix.jpg": "/movie-app-imdb/static/media/netflix.95c0df00113974b5816d.jpg",
+    "index.html": "/movie-app-imdb/index.html",
+    "main.b91b6a17.css.map": "/movie-app-imdb/static/css/main.b91b6a17.css.map",
+    "main.703dd322.js.map": "/movie-app-imdb/static/js/main.703dd322.js.map"
   },
   "entrypoints": [
-    "static/css/main.402f673a.css",
+    "static/css/main.b91b6a17.css",
     "static/js/main.703dd322.js"
   ]
 }
